@@ -1,0 +1,13 @@
+SELECT * from tutorias.docente;
+SELECT  nom_docente, correo FROM tutorias.docente;
+SELECT nom_docente, correo, telefono FROM tutorias.docente WHERE nom_docente = "JUAN";
+select registro_doc from tutorias.docente where registro_doc= "2025-08-26 20:34:28";
+select nom_estudiante from tutorias.estudiantes order by id_estudiante desc;
+select nom_docente from tutorias.docente limit 5;
+SELECT nom_estudiante FROM tutorias.estudiantes WHERE nom_estudiante LIKE '%A';
+SELECT nom_estudiante,ape_estudiante FROM tutorias.estudiantes WHERE ape_estudiante LIKE '%Ramirez%';
+SELECT * from tutorias.tutorias;
+SELECT COUNT(*) FROM tutorias.tutorias;
+SELECT COUNT(*) FROM tutorias.docente;
+SELECT * from tutorias.materia;
+select num_estudiantes from, COUNT(*) AS total_estudiantes from estudiantes group by curso;
